@@ -89,7 +89,7 @@ public class CommonInternalAbilities {
 			return WalkOnType.ABLE_WITH_SPEED;
 		}
 		ItemStack helmet = player.getItemBySlot(EquipmentSlot.HEAD);
-		return !helmet.isEmpty() && helmet.getItem() == PEItems.GEM_HELMET.get() ? WalkOnType.ABLE : WalkOnType.UNABLE;
+		return WalkOnType.UNABLE;
 	}
 
 	private WalkOnType canWalkOnLava() {
@@ -97,7 +97,7 @@ public class CommonInternalAbilities {
 			return WalkOnType.ABLE_WITH_SPEED;
 		}
 		ItemStack chestplate = player.getItemBySlot(EquipmentSlot.CHEST);
-		return !chestplate.isEmpty() && chestplate.getItem() == PEItems.GEM_CHESTPLATE.get() ? WalkOnType.ABLE : WalkOnType.UNABLE;
+		return WalkOnType.UNABLE;
 	}
 
 	private enum WalkOnType {

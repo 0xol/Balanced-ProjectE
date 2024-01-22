@@ -141,7 +141,7 @@ public class CondenserBlockEntity extends EmcChestBlockEntity {
 			ItemStack stack = inputInventory.getStackInSlot(i);
 			if (!stack.isEmpty() && !isStackEqualToLock(stack)) {
 				inputInventory.extractItem(i, 1, false);
-				forceInsertEmc(EMCHelper.getEmcSellValue(stack), EmcAction.EXECUTE);
+				forceInsertEmc(EMCHelper.getEmcSellValue(stack) / 8, EmcAction.EXECUTE);
 				break;
 			}
 		}

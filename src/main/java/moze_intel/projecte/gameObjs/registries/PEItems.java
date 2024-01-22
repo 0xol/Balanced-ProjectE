@@ -124,10 +124,10 @@ public class PEItems {
 	public static final ItemRegistryObject<RMArmor> RED_MATTER_LEGGINGS = ITEMS.registerNoStackFireImmune("rm_leggings", properties -> new RMArmor(ArmorItem.Type.LEGGINGS, properties));
 	public static final ItemRegistryObject<RMArmor> RED_MATTER_BOOTS = ITEMS.registerNoStackFireImmune("rm_boots", properties -> new RMArmor(ArmorItem.Type.BOOTS, properties));
 
-	public static final ItemRegistryObject<GemHelmet> GEM_HELMET = ITEMS.registerNoStackFireImmune("gem_helmet", GemHelmet::new);
-	public static final ItemRegistryObject<GemChest> GEM_CHESTPLATE = ITEMS.registerNoStackFireImmune("gem_chestplate", GemChest::new);
-	public static final ItemRegistryObject<GemLegs> GEM_LEGGINGS = ITEMS.registerNoStackFireImmune("gem_leggings", GemLegs::new);
-	public static final ItemRegistryObject<GemFeet> GEM_BOOTS = ITEMS.registerNoStackFireImmune("gem_boots", GemFeet::new);
+	//public static final ItemRegistryObject<GemHelmet> GEM_HELMET = ITEMS.registerNoStackFireImmune("gem_helmet", GemHelmet::new);
+	//public static final ItemRegistryObject<GemChest> GEM_CHESTPLATE = ITEMS.registerNoStackFireImmune("gem_chestplate", GemChest::new);
+	//public static final ItemRegistryObject<GemLegs> GEM_LEGGINGS = ITEMS.registerNoStackFireImmune("gem_leggings", GemLegs::new);
+	//public static final ItemRegistryObject<GemFeet> GEM_BOOTS = ITEMS.registerNoStackFireImmune("gem_boots", GemFeet::new);
 
 	public static final ItemRegistryObject<Item> IRON_BAND = ITEMS.register("iron_band");
 	public static final ItemRegistryObject<BlackHoleBand> BLACK_HOLE_BAND = ITEMS.registerNoStackFireImmune("black_hole_band", BlackHoleBand::new);

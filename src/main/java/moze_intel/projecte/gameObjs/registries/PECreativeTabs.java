@@ -148,10 +148,10 @@ public class PECreativeTabs {
 		output.accept(PEItems.RED_MATTER_LEGGINGS);
 		output.accept(PEItems.RED_MATTER_BOOTS);
 
-		output.accept(PEItems.GEM_HELMET);
-		output.accept(PEItems.GEM_CHESTPLATE);
-		output.accept(PEItems.GEM_LEGGINGS);
-		output.accept(PEItems.GEM_BOOTS);
+		//output.accept(PEItems.GEM_HELMET);
+		//output.accept(PEItems.GEM_CHESTPLATE);
+		//output.accept(PEItems.GEM_LEGGINGS);
+		//output.accept(PEItems.GEM_BOOTS);
 	}
 
 	private static void addToExistingTabs(BuildCreativeModeTabContentsEvent event) {
