@@ -161,7 +161,7 @@ public class CollectorMK1BlockEntity extends CapabilityEmcBlockEntity implements
 	}
 
 	private void updateEmc() {
-		if (!this.hasMaxedEmc()) {
+		if (false) {
 			unprocessedEMC += emcGen * (getSunLevel() / 320.0f);
 			if (unprocessedEMC >= 1) {
 				//Force add the EMC regardless of if we can receive EMC from external sources
