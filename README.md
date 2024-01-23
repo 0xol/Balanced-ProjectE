@@ -1,3 +1,15 @@
+# Differences between the balanced fork and the original
+1. Solar collectors no longer function at all.
+
+2. Gem armour has been removed
+
+3. Condenser mk1s delete items with an emc less than 8, condensers also have conversion rates now. When inputing items, the emc value will be divided by 8 (rounding down).
+With the mk2s, the conversion ratio is only 4:1 (unlike the mk1s 8:1), and if an item has any emc with a value less than 4, it will wait until the stack emc is equal to or higher than an emc of 4, then converts it.
+
+Currently version 1.18.x and 1.20.x have releases, but submit an issue for a port to X version, and I will attempt to add the fixes.
+
+If you have any issues or requests feel free to open an issue and I should get to it relatively soon but no promises :)
+
 ![](/src/main/resources/assets/projecte/logo.png?raw=true)
 
 Repository for ProjectE, a complete rewrite of EE2 (Equivalent Exchange 2) for modern Minecraft versions. Transmutation tables, collectors, condensers, flying rings, and all the other trinkets you love are here.
