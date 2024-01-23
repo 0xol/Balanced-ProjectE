@@ -1,18 +1,18 @@
 modLoader="javafml"
 loaderVersion="${loader_version}"
-issueTrackerURL="https://github.com/sinkillerj/ProjectE/issues"
+issueTrackerURL="https://github.com/0xol/Balanced-ProjectE/issues"
 license="MIT"
 
 [[mods]]
   modId="projecte"
   version="${version}"
   displayName="ProjectE"
-  updateJSONURL="https://raw.githubusercontent.com/sinkillerj/ProjectE/mc1.18.x/update.json"
-  displayURL="https://github.com/sinkillerj/ProjectE"
+  updateJSONURL="https://raw.githubusercontent.com/0xol/Balanced-ProjectE/mc1.18.x/update.json"
+  displayURL="https://github.com/0xol/Balanced-ProjectE"
   logoFile="logo.png"
-  authors="SinKillerJ, MaPePeR, williewillus, Lilylicious, pupnewfster"
+  authors="SinKillerJ, MaPePeR, williewillus, Lilylicious, pupnewfster, 0xol"
   credits="EE2 creator - x3n0ph0b3, EE2 GUI Textures - MidnightLightning, Former Texture Artist - Magic Banana"
-  description='''A complete rewrite of EE2 for modern Minecraft versions.'''
+  description='''Fork of Project E, removes gem armour, solar collectors and nerfs condenser efficiency'''
 
 [[dependencies.projecte]]
   modId="minecraft"
