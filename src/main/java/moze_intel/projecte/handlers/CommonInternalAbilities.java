@@ -7,13 +7,11 @@ import moze_intel.projecte.utils.PlayerHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityManager;
@@ -88,16 +86,14 @@ public class CommonInternalAbilities {
 		if (PlayerHelper.checkHotbarCurios(player, stack -> !stack.isEmpty() && stack.getItem() == PEItems.EVERTIDE_AMULET.get())) {
 			return WalkOnType.ABLE_WITH_SPEED;
 		}
-		ItemStack helmet = player.getItemBySlot(EquipmentSlot.HEAD);
-		return !helmet.isEmpty() && helmet.getItem() == PEItems.GEM_HELMET.get() ? WalkOnType.ABLE : WalkOnType.UNABLE;
+		return WalkOnType.UNABLE;
 	}
 
 	private WalkOnType canWalkOnLava() {
 		if (PlayerHelper.checkHotbarCurios(player, stack -> !stack.isEmpty() && stack.getItem() == PEItems.VOLCANITE_AMULET.get())) {
 			return WalkOnType.ABLE_WITH_SPEED;
 		}
-		ItemStack chestplate = player.getItemBySlot(EquipmentSlot.CHEST);
-		return !chestplate.isEmpty() && chestplate.getItem() == PEItems.GEM_CHESTPLATE.get() ? WalkOnType.ABLE : WalkOnType.UNABLE;
+		return WalkOnType.UNABLE;
 	}
 
 	private enum WalkOnType {

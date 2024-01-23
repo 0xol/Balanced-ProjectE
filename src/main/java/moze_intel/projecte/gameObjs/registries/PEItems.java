@@ -20,10 +20,6 @@ import moze_intel.projecte.gameObjs.items.Tome;
 import moze_intel.projecte.gameObjs.items.TransmutationTablet;
 import moze_intel.projecte.gameObjs.items.VolcaniteAmulet;
 import moze_intel.projecte.gameObjs.items.armor.DMArmor;
-import moze_intel.projecte.gameObjs.items.armor.GemChest;
-import moze_intel.projecte.gameObjs.items.armor.GemFeet;
-import moze_intel.projecte.gameObjs.items.armor.GemHelmet;
-import moze_intel.projecte.gameObjs.items.armor.GemLegs;
 import moze_intel.projecte.gameObjs.items.armor.RMArmor;
 import moze_intel.projecte.gameObjs.items.rings.Arcana;
 import moze_intel.projecte.gameObjs.items.rings.ArchangelSmite;
@@ -124,11 +120,6 @@ public class PEItems {
 	public static final ItemRegistryObject<RMArmor> RED_MATTER_CHESTPLATE = ITEMS.registerNoStackFireImmune("rm_chestplate", properties -> new RMArmor(EquipmentSlot.CHEST, properties));
 	public static final ItemRegistryObject<RMArmor> RED_MATTER_LEGGINGS = ITEMS.registerNoStackFireImmune("rm_leggings", properties -> new RMArmor(EquipmentSlot.LEGS, properties));
 	public static final ItemRegistryObject<RMArmor> RED_MATTER_BOOTS = ITEMS.registerNoStackFireImmune("rm_boots", properties -> new RMArmor(EquipmentSlot.FEET, properties));
-
-	public static final ItemRegistryObject<GemHelmet> GEM_HELMET = ITEMS.registerNoStackFireImmune("gem_helmet", GemHelmet::new);
-	public static final ItemRegistryObject<GemChest> GEM_CHESTPLATE = ITEMS.registerNoStackFireImmune("gem_chestplate", GemChest::new);
-	public static final ItemRegistryObject<GemLegs> GEM_LEGGINGS = ITEMS.registerNoStackFireImmune("gem_leggings", GemLegs::new);
-	public static final ItemRegistryObject<GemFeet> GEM_BOOTS = ITEMS.registerNoStackFireImmune("gem_boots", GemFeet::new);
 
 	public static final ItemRegistryObject<Item> IRON_BAND = ITEMS.register("iron_band");
 	public static final ItemRegistryObject<BlackHoleBand> BLACK_HOLE_BAND = ITEMS.registerNoStackFireImmune("black_hole_band", BlackHoleBand::new);

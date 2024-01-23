@@ -1,5 +1,8 @@
 package moze_intel.projecte.gameObjs.block_entities;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import moze_intel.projecte.api.ItemInfo;
 import moze_intel.projecte.api.event.PlayerAttemptCondenserSetEvent;
 import moze_intel.projecte.capability.managing.BasicCapabilityResolver;
@@ -25,8 +28,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 public class CondenserBlockEntity extends EmcChestBlockEntity {
 
@@ -141,7 +142,7 @@ public class CondenserBlockEntity extends EmcChestBlockEntity {
 			ItemStack stack = inputInventory.getStackInSlot(i);
 			if (!stack.isEmpty() && !isStackEqualToLock(stack)) {
 				inputInventory.extractItem(i, 1, false);
-				forceInsertEmc(EMCHelper.getEmcSellValue(stack), EmcAction.EXECUTE);
+				forceInsertEmc(EMCHelper.getEmcSellValue(stack) / 8, EmcAction.EXECUTE);
 				break;
 			}
 		}

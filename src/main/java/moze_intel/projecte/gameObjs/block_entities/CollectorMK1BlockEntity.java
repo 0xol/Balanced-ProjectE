@@ -161,7 +161,7 @@ public class CollectorMK1BlockEntity extends CapabilityEmcBlockEntity implements
 	}
 
 	private void updateEmc() {
-		if (!this.hasMaxedEmc()) {
+		/*if (!this.hasMaxedEmc()) {
 			unprocessedEMC += emcGen * (getSunLevel() / 320.0f);
 			if (unprocessedEMC >= 1) {
 				//Force add the EMC regardless of if we can receive EMC from external sources
@@ -169,7 +169,7 @@ public class CollectorMK1BlockEntity extends CapabilityEmcBlockEntity implements
 			}
 			//Note: We don't need to recheck comparators because it doesn't take the unprocessed emc into account
 			markDirty(false);
-		}
+		}*/
 
 		if (this.getStoredEmc() > 0) {
 			ItemStack upgrading = getUpgrading();
