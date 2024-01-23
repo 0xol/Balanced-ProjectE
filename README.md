@@ -4,7 +4,7 @@
 2. Gem armour has been removed
 
 3. Condenser mk1s delete items with an emc less than 8, condensers also have conversion rates now. When inputing items, the emc value will be divided by 8 (rounding down).
-With the mk2s, the conversion ratio is only 4:1 (unlike the mk1s 8:1), and if an item has any emc with a value less than 4, it will wait until the stack emc is equal to or higher than an emc of 4, then converts it.
+With the mk2s, the conversion ratio is only 4:1 (unlike the mk1s 8:1), and if an item has any emc with a value less than 4, it will wait until the stack emc is equal to or higher than an emc of 4, then converts the whole stack.
 
 Currently version 1.18.x and 1.20.x have releases, but submit an issue for a port to X version, and I will attempt to add the fixes.
 
