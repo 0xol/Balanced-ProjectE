@@ -140,7 +140,6 @@ public class PERecipeProvider extends RecipeProvider {
 		matterBlockRecipes(consumer, PEItems.RED_MATTER, PEBlocks.RED_MATTER);
 		darkMatterGearRecipes(consumer);
 		redMatterGearRecipes(consumer);
-		gemArmorRecipes(consumer);
 		addFurnaceRecipes(consumer);
 		//Dark Matter
 		ShapedRecipeBuilder.shaped(PEItems.DARK_MATTER)
@@ -411,32 +410,6 @@ public class PERecipeProvider extends RecipeProvider {
 				.unlockedBy("has_pickaxe", has(PEItems.RED_MATTER_PICKAXE))
 				.unlockedBy("has_shovel", has(PEItems.RED_MATTER_SHOVEL))
 				.save(consumer);
-	}
-
-	private static void gemArmorRecipes(Consumer<FinishedRecipe> consumer) {
-		//Helmet
-		gemArmorRecipe(consumer, () -> ShapelessRecipeBuilder.shapeless(PEItems.GEM_HELMET)
-				.requires(PEItems.RED_MATTER_HELMET)
-				.requires(PEItems.EVERTIDE_AMULET)
-				.requires(PEItems.SOUL_STONE)
-				.unlockedBy("has_helmet", has(PEItems.RED_MATTER_HELMET)), PEItems.GEM_HELMET);
-		//Chestplate
-		gemArmorRecipe(consumer, () -> ShapelessRecipeBuilder.shapeless(PEItems.GEM_CHESTPLATE)
-				.requires(PEItems.RED_MATTER_CHESTPLATE)
-				.requires(PEItems.VOLCANITE_AMULET)
-				.requires(PEItems.BODY_STONE)
-				.unlockedBy("has_chestplate", has(PEItems.RED_MATTER_CHESTPLATE)), PEItems.GEM_CHESTPLATE);
-		//Leggings
-		gemArmorRecipe(consumer, () -> ShapelessRecipeBuilder.shapeless(PEItems.GEM_LEGGINGS)
-				.requires(PEItems.RED_MATTER_LEGGINGS)
-				.requires(PEItems.BLACK_HOLE_BAND)
-				.requires(PEItems.WATCH_OF_FLOWING_TIME)
-				.unlockedBy("has_leggings", has(PEItems.RED_MATTER_LEGGINGS)), PEItems.GEM_LEGGINGS);
-		//Boots
-		gemArmorRecipe(consumer, () -> ShapelessRecipeBuilder.shapeless(PEItems.GEM_BOOTS)
-				.requires(PEItems.RED_MATTER_BOOTS)
-				.requires(PEItems.SWIFTWOLF_RENDING_GALE, 2)
-				.unlockedBy("has_boots", has(PEItems.RED_MATTER_BOOTS)), PEItems.GEM_BOOTS);
 	}
 
 	private static Ingredient getFullKleinStarIngredient(EnumKleinTier tier) {

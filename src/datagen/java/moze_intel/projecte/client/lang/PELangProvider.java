@@ -296,10 +296,6 @@ public class PELangProvider extends BaseLanguageProvider {
 		add(PEItems.RED_MATTER_CHESTPLATE, "Red Matter Chestplate");
 		add(PEItems.RED_MATTER_LEGGINGS, "Red Matter Leggings");
 		add(PEItems.RED_MATTER_BOOTS, "Red Matter Boots");
-		add(PEItems.GEM_HELMET, "Gem Helmet");
-		add(PEItems.GEM_CHESTPLATE, "Gem Chestplate");
-		add(PEItems.GEM_LEGGINGS, "Gem Leggings");
-		add(PEItems.GEM_BOOTS, "Gem Boots");
 		add(PEItems.ARCANA_RING, "Ring of Arcana");
 		add(PEItems.VOID_RING, "Void Ring");
 		add(PEItems.ZERO_RING, "Zero Ring");

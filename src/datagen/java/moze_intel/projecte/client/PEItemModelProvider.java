@@ -225,11 +225,6 @@ public class PEItemModelProvider extends ItemModelProvider {
 		handheld(PEItems.RED_MATTER_SWORD, modLoc("item/rm_tools/sword"));
 		handheld(PEItems.RED_MATTER_KATAR, modLoc("item/rm_tools/katar"));
 		handheld(PEItems.RED_MATTER_MORNING_STAR, modLoc("item/rm_tools/morning_star"));
-		//Gem
-		generated(PEItems.GEM_HELMET, modLoc("item/gem_armor/head"));
-		generated(PEItems.GEM_CHESTPLATE, modLoc("item/gem_armor/chest"));
-		generated(PEItems.GEM_LEGGINGS, modLoc("item/gem_armor/legs"));
-		generated(PEItems.GEM_BOOTS, modLoc("item/gem_armor/feet"));
 	}
 
 	private void blockParentModel(BlockRegistryObject<?, ?>... blocks) {
